@@ -7,6 +7,7 @@ require_once './config.php';
 
 use \QCloud_WeApp_SDK\Conf as Conf;
 
+
 // 系统判断
 if (PHP_OS === 'WINNT') {
     $sdkConfigPath = 'C:\qcloud\sdk.config';
@@ -21,6 +22,20 @@ if (!file_exists($sdkConfigPath)) {
 
 // 合并 sdk config 和原来的配置
 $sdkConfig = json_decode(file_get_contents($sdkConfigPath), true);
+
+/*
+$sdkConfig = Array(
+    'serverHost' => 'zecpx8xs.qcloud.la',
+    'tunnelServerUrl' => 'https://zecpx8xs.ws.qcloud.la',
+    'tunnelSignatureKey' => 'dv4DB8RXWX8iJofo91nKmgPe1k3oylCbgFmqNBLt',
+    'qcloudAppId' => 1252603316,
+    'qcloudSecretId' => 'AKIDFYgmqvMoX7VhonbfRTRDoDQVPIn8wRK4',
+    'qcloudSecretKey' => 'hGeq13wrhjbKwNenmaFj5GKCsOirsoqm',
+    'wxMessageToken' => 'zecpx8xs',
+    'networkTimeout' => 30000
+);
+*/
+
 
 if (!is_array($sdkConfig)) {
     echo "SDK 配置文件（{$sdkConfigPath}）内容不合法";
