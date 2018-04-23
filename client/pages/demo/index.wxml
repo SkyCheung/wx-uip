@@ -1,0 +1,17 @@
+<view class="main">
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+    <navigator url="/pages/demo/navigator?link={{item.link}}" hover-class="navigator-hover">
+      <image src="{{item.src}}" class="slide-image" width="100%"/>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+</view>
