@@ -1,0 +1,19 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+     <view class="section section_gap swiper">
+            <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{background}}">
+                    <swiper-item>
+                        <view class="swiper-item bc_{{item}}">555888</view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+
+        <view wx:for="{{background}}"> {{item}}</view>
+
+        <view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+        <view wx:elif="{{view == 'APP'}}"> APP </view>
+        <view wx:else="{{view == 'MINA'}}"> MINA </view>
+</view>

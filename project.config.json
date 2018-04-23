@@ -1,0 +1,13 @@
+{
+	"client": "./client",
+	"svr": "./server",
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wxbc6e05bb69190336",
+	"projectname": "TLJ",
+	"compileType": "miniprogram",
+	"condition": {}
+}
