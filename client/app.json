@@ -6,7 +6,8 @@
     "pages/index/index",
     "pages/addCgi/addCgi",
     "pages/demo/navigator",
-    "pages/demo/nav"
+    "pages/demo/nav",
+    "pages/demo/reach"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

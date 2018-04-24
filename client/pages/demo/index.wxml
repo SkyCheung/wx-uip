@@ -1,17 +1,25 @@
 <view class="main">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{banner}}">
+      <swiper-item>
+        <navigator url="/pages/demo/navigator?link={{item.link}}" hover-class="navigator-hover">
+          <image src="{{item.src}}" class="slide-image" mode='widthFix' />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
 
-
-<swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-    <navigator url="/pages/demo/navigator?link={{item.link}}" hover-class="navigator-hover">
-      <image src="{{item.src}}" class="slide-image" width="100%"/>
+  <view class="menu-area">
+    <block wx:for="{{menu}}">
+      <navigator url="/pages/navigate/navigate?title=navigate" hover-class="navigator-hover">
+        <image src='{{item.src}}' mode='widthFix' />
+        <!--<text>{{item.title}}</text> -->
       </navigator>
-    </swiper-item>
-  </block>
-</swiper>
-
-
+    </block>
+  </view>
+  
+  <navigator url="/pages/demo/reach?title=navigate" hover-class="navigator-hover">
+  <view class="newset"><text>最新上架</text></view>
+  </navigator>
 
 </view>

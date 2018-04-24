@@ -1,0 +1,8 @@
+<template>
+  <view class="loading"></view>
+  <view class="container"  touchmove="moveFn" touchstart="startFn" touchend="endFn" style="transform:translate3d(0,{{childTop}}px,0)">
+    <repeat for="{{list}}" key="index" index="index" item="item">
+        <view>{{ item }}<text>{{index}}</text></view>
+    </repeat>
+    </view>
+</template>
