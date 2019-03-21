@@ -27,11 +27,11 @@ $sdkConfig = json_decode(file_get_contents($sdkConfigPath), true);
 $sdkConfig = Array(
     'serverHost' => 'zecpx8xs.qcloud.la',
     'tunnelServerUrl' => 'https://zecpx8xs.ws.qcloud.la',
-    'tunnelSignatureKey' => 'dv4DB8RXWX8iJofo91nKmgPe1k3oylCbgFmqNBLt',
-    'qcloudAppId' => 1252603316,
-    'qcloudSecretId' => 'AKIDFYgmqvMoX7VhonbfRTRDoDQVPIn8wRK4',
-    'qcloudSecretKey' => 'hGeq13wrhjbKwNenmaFj5GKCsOirsoqm',
-    'wxMessageToken' => 'zecpx8xs',
+    'tunnelSignatureKey' => '',
+    'qcloudAppId' => ,
+    'qcloudSecretId' => '',
+    'qcloudSecretKey' => '',
+    'wxMessageToken' => '',
     'networkTimeout' => 30000
 );
 */
